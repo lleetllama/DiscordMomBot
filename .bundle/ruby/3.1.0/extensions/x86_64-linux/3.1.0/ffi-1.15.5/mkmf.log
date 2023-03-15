@@ -1,0 +1,131 @@
+package configuration for libffi is not found
+have_header: checking for ffi.h... -------------------- no
+
+LD_LIBRARY_PATH=.:/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/lib:/nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/lib:/nix/store/p36pgcv991mq5srvg765b78yqpxvk3qs-mesa-21.3.3-drivers/lib:/nix/store/mav4251if1ahjq5vkpwycyyvnmy459c4-pulseaudio-14.2/lib "gcc -o conftest -I/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/include/ruby-3.1.0/x86_64-linux -I/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/include/ruby-3.1.0/ruby/backward -I/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/include/ruby-3.1.0 -I.    -O3 -fPIC conftest.c  -L. -L/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/lib -Wl,-rpath,/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/lib -L/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/lib -lruby-3.1.2  -lm  -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+LD_LIBRARY_PATH=.:/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/lib:/nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/lib:/nix/store/p36pgcv991mq5srvg765b78yqpxvk3qs-mesa-21.3.3-drivers/lib:/nix/store/mav4251if1ahjq5vkpwycyyvnmy459c4-pulseaudio-14.2/lib "gcc -I/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/include/ruby-3.1.0/x86_64-linux -I/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/include/ruby-3.1.0/ruby/backward -I/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/include/ruby-3.1.0 -I.    -O3 -fPIC   -c conftest.c"
+conftest.c:3:10: fatal error: ffi.h: No such file or directory
+    3 | #include <ffi.h>
+      |          ^~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ffi.h>
+/* end */
+
+--------------------
+
+find_header: checking for ffi.h in /usr/local/include,/usr/include/ffi,/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ffi,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/ffi... -------------------- no
+
+LD_LIBRARY_PATH=.:/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/lib:/nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/lib:/nix/store/p36pgcv991mq5srvg765b78yqpxvk3qs-mesa-21.3.3-drivers/lib:/nix/store/mav4251if1ahjq5vkpwycyyvnmy459c4-pulseaudio-14.2/lib "gcc -I/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/include/ruby-3.1.0/x86_64-linux -I/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/include/ruby-3.1.0/ruby/backward -I/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/include/ruby-3.1.0 -I.    -O3 -fPIC   -c conftest.c"
+conftest.c:3:10: fatal error: ffi.h: No such file or directory
+    3 | #include <ffi.h>
+      |          ^~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ffi.h>
+/* end */
+
+LD_LIBRARY_PATH=.:/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/lib:/nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/lib:/nix/store/p36pgcv991mq5srvg765b78yqpxvk3qs-mesa-21.3.3-drivers/lib:/nix/store/mav4251if1ahjq5vkpwycyyvnmy459c4-pulseaudio-14.2/lib "gcc -I/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/include/ruby-3.1.0/x86_64-linux -I/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/include/ruby-3.1.0/ruby/backward -I/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/include/ruby-3.1.0 -I.    -O3 -fPIC  -I/usr/local/include -c conftest.c"
+conftest.c:3:10: fatal error: ffi.h: No such file or directory
+    3 | #include <ffi.h>
+      |          ^~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ffi.h>
+/* end */
+
+LD_LIBRARY_PATH=.:/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/lib:/nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/lib:/nix/store/p36pgcv991mq5srvg765b78yqpxvk3qs-mesa-21.3.3-drivers/lib:/nix/store/mav4251if1ahjq5vkpwycyyvnmy459c4-pulseaudio-14.2/lib "gcc -I/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/include/ruby-3.1.0/x86_64-linux -I/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/include/ruby-3.1.0/ruby/backward -I/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/include/ruby-3.1.0 -I.    -O3 -fPIC  -I/usr/include/ffi -c conftest.c"
+conftest.c:3:10: fatal error: ffi.h: No such file or directory
+    3 | #include <ffi.h>
+      |          ^~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ffi.h>
+/* end */
+
+LD_LIBRARY_PATH=.:/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/lib:/nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/lib:/nix/store/p36pgcv991mq5srvg765b78yqpxvk3qs-mesa-21.3.3-drivers/lib:/nix/store/mav4251if1ahjq5vkpwycyyvnmy459c4-pulseaudio-14.2/lib "gcc -I/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/include/ruby-3.1.0/x86_64-linux -I/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/include/ruby-3.1.0/ruby/backward -I/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/include/ruby-3.1.0 -I.    -O3 -fPIC  -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ffi -c conftest.c"
+conftest.c:3:10: fatal error: ffi.h: No such file or directory
+    3 | #include <ffi.h>
+      |          ^~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ffi.h>
+/* end */
+
+LD_LIBRARY_PATH=.:/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/lib:/nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/lib:/nix/store/p36pgcv991mq5srvg765b78yqpxvk3qs-mesa-21.3.3-drivers/lib:/nix/store/mav4251if1ahjq5vkpwycyyvnmy459c4-pulseaudio-14.2/lib "gcc -I/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/include/ruby-3.1.0/x86_64-linux -I/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/include/ruby-3.1.0/ruby/backward -I/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/include/ruby-3.1.0 -I.    -O3 -fPIC  -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/ffi -c conftest.c"
+conftest.c:3:10: fatal error: ffi.h: No such file or directory
+    3 | #include <ffi.h>
+      |          ^~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ffi.h>
+/* end */
+
+--------------------
+
+block in append_ldflags: checking for whether -Wl,--exclude-libs,ALL is accepted as LDFLAGS... -------------------- yes
+
+LD_LIBRARY_PATH=.:/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/lib:/nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/lib:/nix/store/p36pgcv991mq5srvg765b78yqpxvk3qs-mesa-21.3.3-drivers/lib:/nix/store/mav4251if1ahjq5vkpwycyyvnmy459c4-pulseaudio-14.2/lib "gcc -o conftest -I/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/include/ruby-3.1.0/x86_64-linux -I/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/include/ruby-3.1.0/ruby/backward -I/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/include/ruby-3.1.0 -I.    -O3 -fPIC conftest.c  -L. -L/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/lib -Wl,-rpath,/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/lib -L/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/lib -lruby-3.1.2 -Wl,--exclude-libs,ALL -lm  -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+block in append_ldflags: checking for whether -pthread is accepted as LDFLAGS... -------------------- yes
+
+LD_LIBRARY_PATH=.:/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/lib:/nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/lib:/nix/store/p36pgcv991mq5srvg765b78yqpxvk3qs-mesa-21.3.3-drivers/lib:/nix/store/mav4251if1ahjq5vkpwycyyvnmy459c4-pulseaudio-14.2/lib "gcc -o conftest -I/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/include/ruby-3.1.0/x86_64-linux -I/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/include/ruby-3.1.0/ruby/backward -I/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/include/ruby-3.1.0 -I.    -O3 -fPIC conftest.c  -L. -L/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/lib -Wl,-rpath,/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed -Wl,--exclude-libs,ALL     -Wl,-rpath,/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/lib -L/nix/store/zy37gk8w7qvzxcpvl74d2zh1zvfsixj0-ruby-3.1.2/lib -lruby-3.1.2 -pthread -lm  -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+extconf.h is:
+/* begin */
+1: #ifndef EXTCONF_H
+2: #define EXTCONF_H
+3: #define HAVE_FFI_PREP_CIF_VAR 1
+4: #define USE_INTERNAL_LIBFFI 1
+5: #endif
+/* end */
+
