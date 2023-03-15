@@ -67,7 +67,7 @@ end
 
 # Define the help command
 bot.command :amibad do |event|
-  event.respond("You have been shamed: " + (@user_counts[event.user.id] || 0).to_s + " times")
+  event.respond("#{event.user.name}, you have been shamed: #{(@user_counts[event.user.id] || 0).to_s} times")
 end
 
 
@@ -137,7 +137,7 @@ bot.command :emancipate do |event|
     file.puts(user_id)
   end
 
-  event.respond('You have been opted out of message scanning.')
+  event.respond(event.user.name + ': You have been opted out of message scanning.')
 end
 
 # Define the command to opt-in to message scanning
@@ -152,7 +152,7 @@ bot.command :adopt do |event|
     end
   end
 
-  event.respond('You have been opted back in to message scanning.')
+  event.respond(event.user.name + ': You have been opted back in to message scanning.')
 end
 ###################################################################
 
@@ -178,7 +178,7 @@ bot.message do |event|
     
     # Send a message indicating that a forbidden word was used
     response = select_mom_line(get_parent_type_for_day)
-    event.respond(response)
+    event.respond("#{event.user.name}, #{response}")
   elsif event.message.content.downcase.include?("mom,") && event.message.content.downcase.include?("is bullying me")
     # Respond to bullying message
     random_name = event.message.content.downcase.scan(/mom, (.*) is bullying me/).flatten.first
